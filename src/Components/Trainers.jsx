@@ -1,5 +1,4 @@
 import React from "react";
-// import { IoMdPerson } from "react-icons/io";
 import profile from "../assets/images/profile.png";
 export default function Trainers() {
   return (
@@ -17,7 +16,7 @@ export default function Trainers() {
           >
             <div class="flex flex-col items-center pb-10">
               <img class="w-30 h-24 mb-3  " src={profile} alt="Bonnie image" />
-              {/* <IoMdPerson /> */}
+
               <h5 class="mb-1 text-xl font-medium text-gray-900 ">
                 Trainer Name
               </h5>

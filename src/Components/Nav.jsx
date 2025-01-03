@@ -17,7 +17,6 @@ export default function Nav() {
     drawerToggle.addEventListener("click", toggleDrawer);
     closeSpan.addEventListener("click", toggleDrawer);
 
-    // Cleanup event listeners on component unmount
     return () => {
       drawerToggle.removeEventListener("click", toggleDrawer);
       closeSpan.removeEventListener("click", toggleDrawer);

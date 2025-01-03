@@ -1,5 +1,5 @@
 import React from "react";
-import PaymentChart from "./PaymentChart";
+import PaymentChart from "./Payment/PaymentChart";
 
 export default function Home() {
   return (

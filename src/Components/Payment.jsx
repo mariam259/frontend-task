@@ -1,12 +1,9 @@
-// import { Pie, PieChart } from "recharts";
-import PaymentChart from "./PaymentChart";
-import PaymentTable from "./PaymentTable";
+import PaymentChart from "./Payment/PaymentChart";
+import PaymentTable from "./Payment/PaymentTable";
 import PieCharts from "./PieCharts";
 export default function Payment() {
   return (
     <div className="md:pl-40">
-      {/* add a chart for payment methods using pie chart */}
-
       <div className="grid grid-cols-1 lg:grid-cols-2 sm:gap-0 gap-3 ">
         <div>
           <h1 class="mt-4 text-xl text-center font-extrabold text-gray-900 md:text-5xl lg:text-4xl">

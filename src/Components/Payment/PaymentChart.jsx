@@ -22,10 +22,6 @@ export default function Payment() {
       name: "May",
       cost: 492,
     },
-    {
-      name: "Page F",
-      cost: 1400,
-    },
   ];
 
   return (
@@ -46,14 +42,12 @@ export default function Payment() {
           left: 20,
         }}
       >
-        {/* <CartesianGrid stroke="#f5f5f5" /> */}
         <XAxis type="number" />
         <YAxis dataKey="name" type="category" />
         <Tooltip />
         <Legend />
-        {/* <Area dataKey="amt" fill="#8884d8" stroke="#8884d8" /> */}
+
         <Bar dataKey="cost" barSize={15} fill="#80e5ff" />
-        {/* <Line dataKey="uv" stroke="#ff7300" /> */}
       </ComposedChart>
     </div>
   );

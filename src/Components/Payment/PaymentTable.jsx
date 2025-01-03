@@ -1,4 +1,4 @@
-import { payment } from "../constant/PaymentsData";
+import { payment } from "../../constant/PaymentsData";
 
 export default function PaymentTable() {
   return (

@@ -1,4 +1,4 @@
-import { PieChart, Pie, Legend, Tooltip } from "recharts";
+import { PieChart, Pie, Tooltip } from "recharts";
 
 const data01 = [
   { name: "A", value: 400 },
@@ -10,8 +10,6 @@ const data01 = [
 ];
 
 export default function PieCharts() {
-  //   static demoUrl = "https://codesandbox.io/s/two-simple-pie-chart-otx9h";
-
   return (
     <div className="flex justify-center items-center">
       <PieChart
