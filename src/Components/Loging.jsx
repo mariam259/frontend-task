@@ -1,6 +1,18 @@
 import React from "react";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 export default function Loging() {
+  const navigate = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = () => {
+    navigate("/home");
+  };
   return (
     <section className="bg-gray-50 min-h-screen flex items-center justify-center">
       <div className="flex flex-col h-screen w-screen items-center justify-center px-6 py-5 mx-auto lg:py-0">
@@ -9,7 +21,11 @@ export default function Loging() {
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
               Sign in to your account
             </h1>
-            <form className="space-y-4 md:space-y-6" action="#">
+            <form
+              className="space-y-4 md:space-y-6"
+              action="#"
+              onSubmit={handleSubmit(onSubmit)}
+            >
               <div>
                 <label
                   for="email"
@@ -21,10 +37,19 @@ export default function Loging() {
                   type="email"
                   name="email"
                   id="email"
+                  {...register("email", {
+                    required: "Email is required",
+                    pattern: {
+                      value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                      message: "Email is not valid",
+                    },
+                  })}
                   className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                   placeholder="name@company.com"
-                  required=""
                 />
+                {errors.email && (
+                  <p className="text-red-500 text-sm">{errors.email.message}</p>
+                )}
               </div>
               <div>
                 <label
@@ -38,15 +63,26 @@ export default function Loging() {
                   name="password"
                   id="password"
                   placeholder="••••••••"
+                  {...register("password", {
+                    required: "Password is required",
+                    pattern: {
+                      value: /^.{8,}$/,
+                      message: "Password must be at least 8 characters",
+                    },
+                  })}
                   className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                   required=""
                 />
+                {errors.password && (
+                  <p className="text-red-500 text-sm">
+                    {errors.password.message}
+                  </p>
+                )}
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-start">
                   <div className="flex items-center h-5">
                     <input
-                      id="remember"
                       aria-describedby="remember"
                       type="checkbox"
                       className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 "

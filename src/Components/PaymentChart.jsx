@@ -29,11 +29,15 @@ export default function Payment() {
   ];
 
   return (
-    <div className="pl-44 pt-5">
+    <div className="">
       <ComposedChart
         layout="vertical"
-        width={500}
-        height={400}
+        width={
+          typeof window !== "undefined" && window.innerWidth < 768 ? 350 : 500
+        }
+        height={
+          typeof window !== "undefined" && window.innerWidth < 768 ? 350 : 400
+        }
         data={data}
         margin={{
           top: 30,
