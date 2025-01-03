@@ -20,8 +20,8 @@ export default function Home() {
             Courses Activated
           </h5>
           <p class="font-normal text-gray-700">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            Here are the total number of course coverd since starting. We lauch
+            189 courses so far.
           </p>
         </a>
         <a
@@ -29,11 +29,11 @@ export default function Home() {
           class="block max-w-sm p-6 bg-gradient-to-l from-primary to-secondary border border-gray-200 rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 "
         >
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-            total Trainers
+            Total Trainers
           </h5>
           <p class="font-normal text-gray-700">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            Here are the total number of trainers so far join us. Our family now
+            is 80 member and with contious growing.
           </p>
         </a>
         <a
@@ -44,8 +44,8 @@ export default function Home() {
             Total Payment
           </h5>
           <p class="font-normal text-gray-700">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            Here are the total payment of 2021 so far, we earned 50000 so far
+            and still counting.
           </p>
         </a>
       </div>

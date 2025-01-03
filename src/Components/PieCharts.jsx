@@ -1,12 +1,10 @@
 import { PieChart, Pie, Tooltip } from "recharts";
 
 const data01 = [
-  { name: "A", value: 400 },
-  { name: "B", value: 300 },
-  { name: "C", value: 300 },
-  { name: "D", value: 200 },
-  { name: "E", value: 278 },
-  { name: "F", value: 189 },
+  { name: "Visa", value: 400 },
+  { name: "Master Card", value: 300 },
+  { name: "Paypal", value: 300 },
+  { name: "Cash", value: 200 },
 ];
 
 export default function PieCharts() {

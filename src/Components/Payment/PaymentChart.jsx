@@ -1,6 +1,6 @@
 import { ComposedChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 
-export default function Payment() {
+export default function PaymentChart() {
   const data = [
     {
       name: "Jaunary",
